@@ -1,0 +1,232 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+#menu_static{
+  background-color: white;
+  position:static;
+  top: auto;
+  width: 100%;
+}
+
+h1{
+  padding: 1rem;
+  background-color: #313165;
+  color: white;
+  border-radius: 0.1em;
+}
+h2{
+  border-bottom: 1px solid #313165;
+}
+
+section{
+  padding: 1rem 5rem;
+  padding-top: 2rem;
+}
+
+section:not([id]) {
+  padding: 1em 0;
+}
+
+section h3 {
+  margin: 0.4rem 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  margin: 1em 0;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.nav_main ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  justify-content: space-around;
+}
+.nav_main ul li{
+  margin: 0.8rem;
+}
+
+.nav_main ul li a{
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  /* dark blue  */
+  background-color: #313165;
+  color: white;
+  border-radius: 0.25em;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.nav_main ul li a:hover{
+  /* orange  */
+  background-color: #FB9823;
+}
+
+
+/* Styling for the navigation button */
+.button_nav {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  color: white;
+  background-color: #313165;
+  text-decoration: none;
+}
+
+.button_nav:hover, .button-nav:focus {
+  color: #ACD6EE;
+}
+
+.link_in_text{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.link_in_text:hover{
+  /* light blue */
+  color: #ACD6EE;
+}
+
+.button_submit{
+  display: inline-block;
+  padding: 1em 1em;
+  color: white;
+  background-color: #313165;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.button_submit:hover, .button-nav:focus {
+  background-color: #FB9823;
+}
+
+#name_f{
+  background-color: #E5E5E5;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+/*
+  TEXT ELEMENTS -------------------
+*/
+#headings h1{
+  font-size: 2rem;
+}
+#headings h2{
+  font-size: 1.5rem;
+  border: none;
+}
+#headings h3{
+  font-size: 1rem;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+.nav_sample{
+  background-color: #313165;
+  padding: 0.5rem 0;
+  line-height: 2rem;
+}
+.nav_sample ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  justify-content: flex-end;
+}
+.nav_sample ul li a{
+  padding: 0 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_sample ul li a:hover{
+  /* light blue */
+  color: #ACD6EE;
+}
+
+
+.product_details{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.product_img img{
+  width: 10rem;;
+  height: auto;
+}
+.product_brief{
+  margin: 0 2rem;
+}
+.product_brief h4{
+  margin-bottom: 0.5rem;
+}
+
+#color_plate{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+}
+
+.grid{
+  display: block;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+}
+
+/* Responsive view  */
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 1.5em;
+
+  }
+  h2{
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+  code{
+    font-size: 0.8em;
+  }
+
+  .product_img{
+    width: 10rem;
+  }
+
+  #color_plate{
+    width: 15rem;
+  }
+  .grid{
+    width: 15rem;
+  }
+
+}
